@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": "template-mod:suspicious_substance"
+  },
+  "result": {
+    "id": "minecraft:potato",
+    "count": 64
+  }
+}

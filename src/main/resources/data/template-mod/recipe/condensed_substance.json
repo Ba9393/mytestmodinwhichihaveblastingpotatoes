@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "template-mod:suspicious_substance"
+  ],
+  "result": {
+    "id": "template-mod:condensed_dirt",
+    "count": 32
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#n#",
+    "DZD",
+    "#n#"
+  ],
+  "key": {
+    "#": "minecraft:nether_star",
+    "n": "minecraft:netherite_ingot",
+    "D": "minecraft:dragon_breath",
+    "Z": "minecraft:dirt"
+  },
+  "result": {
+    "id": "template-mod:condensed_dirt",
+    "count": 32
+  }
+}
