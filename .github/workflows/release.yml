@@ -1,0 +1,30 @@
+name: Build and Release Mod
+
+on:
+  push:
+    tags:
+      - 'v*' # triggers on tags like v1.0.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: 'temurin'
+
+      - name: Build mod
+        run: ./gradlew build
+
+      - name: Upload .jar to GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            build/libs/*.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
